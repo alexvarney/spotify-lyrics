@@ -7,7 +7,6 @@ import SongDisplay from './SongDisplay'
 const useCurrentTrack = auth => {
 
         const [currentTrack, setCurrentTrack] = useState(null)
-        const [currentAlbum, setCurrentAlbum] = useState(null)
 
         useEffect(() => {
             setInterval(()=>{

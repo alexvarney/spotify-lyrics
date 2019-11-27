@@ -56,7 +56,7 @@ const SongDisplay = ({song, auth}) => {
 
             {auth.spotifyLoggedIn ? 
             <> 
-                <SongTitleCard song={song} />
+                {song && song.item ? <SongTitleCard song={song} /> : <p>Play a song on Spotify to get started</p>}
             </> : 
             <> 
                 <SpotifyLoginButton />

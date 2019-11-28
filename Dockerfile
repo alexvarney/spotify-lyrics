@@ -12,4 +12,5 @@ RUN npm install && cd client && npm install && npm run build
 #Run the app
 EXPOSE 80
 ENV PRODUCTION=true
+ENV HTTPS_METHOD=noredirect
 CMD ["node", "bin/www"]

@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 #Install dependencies and build the app
-RUN npm install && cd client && npm install && npm run build
+RUN yarn && cd client && yarn && yarn build
 
 #Run the app
 EXPOSE 80
